@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | GWallet</title>
+
+    <link rel="shortcut icon" href="./images/logo2.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="./style3.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <img class="logo-nav" src="./images/logo2.png" alt="GWallet">
+        <ul class="navigations" id="nav1">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="/LogIn">About</a></li>
+            <li><a href="/LogIn">Contact</a></li>
+            
+        </ul>
+        <ul class="navigations">
+            <li><a href="./signIn.html" class="btn btn-blue-brd br-1" onclick="myfunction()">Log Out</a></li>
+        </ul>
+        <span class="navigations2" onclick="myFn()">
+            <div class="hmen" onclick="myFn()"></div>
+            <div class="hmen" onclick="myFn()"></div>
+            <div class="hmen" onclick="myFn()"></div>
+        </span>
+    </nav>
+    
+    <aside class="nav2" id="nav2">
+        
+        <ul class="sidenav">
+            <li><img class="" style="height:50px" src="./images/logo2.png" alt="GWallet"></li>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="/LogIn">About</a></li>
+            <li><a href="/LogIn">Contact</a></li>
+            <li><button href="./signUp.html" class="btn btn-blue-brd br-1">SignUp</button></li>
+            <li><button href="./signIn.html" class="btn br-1">LogIn</button></li>
+        </ul>
+    </aside>
+<br><br>
+    <main style="display:flex;justify-content:center;align-items:center;">
+        <div class="sub_nav" style="background-color:#0099ff;padding:30px;border-radius:10px;">
+            <div>
+                <a href="" style="color:white;"><span style="background-color:white;padding:4.5px 10px;border-radius:5px;"><i style="color:#0099ff;;margin-right:5px;margin-left: 5px;" class="fas fa-user"></i></span><span style="margin-left:10px;color:white">Ram</span></a>
+            </div>
+            <div>
+                <a href="" style="color:white;"> <span style="background-color:white;padding:4.5px 10px;border-radius:5px;"><i style="color:#0099ff;" class="fas fa-dollar-sign"></i></span> 100.00</a>
+            </div>
+            
+        </div>
+        
+    </main>
+    <br><br>
+    <main style="display:flex;justify-content:center;align-items:center;">
+        <div class="sub_nav" >
+            <button class="btn btn-blue br-1"><a style="color: white;" href="./Recharge.html" > <i style="color:white;margin-right: 10px;" class="fas fa-file-invoice-dollar"></i>Pay bill</a></button>
+
+            <button class="btn btn-blue br-1"><a style="color: white;" href="./Addbalance.html" ><i style="color:white;margin-right: 5px;" class="fas fa-money-bill-wave-alt"></i> Add balance</a></button>
+
+            <button class="btn btn-blue br-1"><a style="color: white;" href="./history.html" >history <i style="color:white;margin-left: 5px;" class="fas fa-history"></i></a></button>
+
+        </div>
+        
+    </main>
+    
+  
+
+
+    <script>
+                       function myfunction() {
+  location.replace("home.html")
+}
+        function myFn(){
+            var k = document.getElementById('nav1');
+            var m = document.getElementById('nav2');
+            if(k.style.display != 'none'){
+                document.getElementById('nav2').style.display = 'block'
+            }
+            else{
+                document.getElementById('nav2').style.display = 'none'
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="shortcut icon" href="./images/logo2.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <img class="logo-nav" src="./images/logo2.png" alt="GWallet">
+        <ul class="navigations" id="nav1">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="/LogIn">About</a></li>
+            <li><a href="/LogIn">Contact</a></li>
+            
+        </ul>
+        <ul class="navigations">
+            <li><a href="./signUp.html" class="btn btn-blue br-1">SignUp</a></li>
+            <li><a href="./signIn.html" class="btn btn-blue-brd br-1">LogIn</a></li>
+        </ul>
+        <span class="navigations2" onclick="myFn()">
+            <div class="hmen" onclick="myFn()"></div>
+            <div class="hmen" onclick="myFn()"></div>
+            <div class="hmen" onclick="myFn()"></div>
+        </span>
+    </nav>
+    
+    <aside class="nav2" id="nav2">
+        
+        <ul class="sidenav">
+            <li><img class="" style="height:50px" src="./images/logo2.png" alt="GWallet"></li>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="/LogIn">About</a></li>
+            <li><a href="/LogIn">Contact</a></li>
+            <li><button href="./signUp.html" class="btn btn-blue-brd br-1">SignUp</button></li>
+            <li><button href="./signIn.html" class="btn br-1">LogIn</button></li>
+        </ul>
+    </aside>
+    <div style="display: flex;justify-content:center;margin-top:50px">
+        <div class="form_container">
+            <div class="side_container">
+                <h1 style="color: #fff;">New User?</h1><br><br>
+                <button href="./signIn.html" class="btn btn-blue br-1">Sign Up</button>
+            </div>
+    
+            <div class="creation_form">
+                <h1 class="main_heading">Sign In</h1>
+                
+                <div>
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" name="email" placeholder="Email.."/>
+                </div>
+
+                <div>
+                    <i class="fas fa-lock"></i>
+                    <input type="password" name="pass1" placeholder="password"/>
+                    <i class="fas fa-eye"></i>
+                </div>
+                
+               <br>
+                <button class=" btn-form"  onclick="myFunction()">Log In</button><br>
+               -- or --
+               <span style="font-size:30px">
+                <i class="fab fa-google"></i><i class="fab fa-facebook-square"></i>
+
+               </span><br>
+            </div>
+        </div>
+    </div>
+   
+    
+
+    <script>
+               function myFunction() {
+  location.replace("./home.html")
+}
+        function myFn(){
+            var k = document.getElementById('nav1');
+            var m = document.getElementById('nav2');
+            if(k.style.display != 'none'){
+                document.getElementById('nav2').style.display = 'block'
+            }
+            else{
+                document.getElementById('nav2').style.display = 'none'
+            }
+        }
+    </script>
+</body>
+</html>

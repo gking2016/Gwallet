@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GWallet</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./images/logo2.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <img class="logo-nav" src="./images/logo2.png" alt="GWallet">
+        <ul class="navigations" id="nav1">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="/LogIn">About</a></li>
+            <li><a href="/LogIn">Contact</a></li>
+            
+        </ul>
+        <ul class="navigations">
+            <li><a href="./signUp.html" class="btn btn-blue br-1" >SignUp</a></li>
+            <li><a href="./signIn.html" class="btn btn-blue-brd br-1">LogIn</a></li>
+        </ul>
+        <span class="navigations2" onclick="myFn()">
+            <div class="hmen" onclick="myFn()"></div>
+            <div class="hmen" onclick="myFn()"></div>
+            <div class="hmen" onclick="myFn()"></div>
+        </span>
+    </nav>
+    
+    <aside class="nav2" id="nav2">
+        
+        <ul class="sidenav">
+            <li><img class="" style="height:50px" src="./images/logo2.png" alt="GWallet"></li>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="/LogIn">About</a></li>
+            <li><a href="/LogIn">Contact</a></li>
+            <li><a href="./signUp.html" style="z-index:1000;" class="btn btn-blue-brd br-1">SignUp</a></li>
+            <li><a href="./signIn.html" style="z-index:1000;" class="btn br-1">LogIn</a></li>
+        </ul>
+    </aside>
+    <header class="main-intro">
+        <div class="glass">
+        <h1 class="intro">Welcome To</h1>
+        <h1 class="intro" >GWallet!!</h1>
+        <div>
+            <button class="btn btn-blue"><a style="color: white;" href="/createaccount" >Create Account</a></button>
+            <button class="btn btn-grey">Explore</button>
+        </div>
+    </div>
+    </header>
+    <!-- <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 0"><path fill="#0099ff" fill-opacity="1" d="M0,64L48,74.7C96,85,192,107,288,106.7C384,107,480,85,576,80C672,75,768,85,864,80C960,75,1056,53,1152,58.7C1248,64,1344,96,1392,112L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg> -->
+
+    
+    <h1 class="sub-menu">About Us</h1>
+    <main class="main2">
+        <div style="width: 50%;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto porro explicabo et q.</div>
+        <img src="./images/10107.jpg">
+    </main>
+    <h1 class="sub-menu">Our Services</h1>
+    <main class="main">
+        <section class="sec"></section>
+        <section class="sec"></section>
+ 
+
+    </main>
+    <footer>
+        GWallet All Rights Reserved @2022
+    </footer>
+    <script>
+        function myFn(){
+            var k = document.getElementById('nav1');
+            var m = document.getElementById('nav2');
+            if(k.style.display != 'none'){
+                document.getElementById('nav2').style.display = 'block'
+            }
+            else{
+                document.getElementById('nav2').style.display = 'none'
+            }
+        }
+    </script>
+</body>
+</html>
